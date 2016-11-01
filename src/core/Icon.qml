@@ -65,7 +65,7 @@ Item {
 
                 if (name) {
                     if (Theme.iconsRoot.indexOf('qrc') != -1)
-                        return Theme.iconsRoot + '/' + name + '.svg'
+                        return Theme.iconsRoot + '/' + name.replace('/', '/ic_') + '_24px.svg'
                     else
                         return Theme.iconsRoot + '/' + name.replace('/', '_') + '.svg'
                 } else {
